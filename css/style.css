@@ -109,6 +109,15 @@ transition: transform 0.6s ease-in-out;
     overflow: hidden;
 }
 
+.banner .banner-object {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
 .img-cover {
     background-size: cover;
     background-position: center;
@@ -150,6 +159,18 @@ transition: transform 0.6s ease-in-out;
     font-weight: 700;
     color: #000000; /* Màu chữ tiêu đề chính */
     margin-bottom: 1rem;
+}
+
+.banner .banner-object .object-embed {
+    top: 50%;
+    left: 50%;
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    position: relative;
+    object-fit: cover;
 }
 
 .banner-desc {
@@ -327,4 +348,11 @@ transition: transform 0.6s ease-in-out;
 .footer-copy {
     margin: 0;
     font-size: 14px;
+}
+
+.header{
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    height: 100%;
 }
